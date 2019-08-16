@@ -1,0 +1,29 @@
+{
+  "name": "ui-kit",
+  "version": "0.0.1",
+  "description": "A configurable UI kit built upon Angular v8's CDK",
+  "main": "index.ts",
+  "scripts": {
+    "pretty": "prettier --write --single-quote '**/*.ts' '**/*.scss' '!dist/*' --print-width 100",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lamar-software/ui-kit.git"
+  },
+  "author": "LaMar Software",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lamar-software/ui-kit/issues"
+  },
+  "homepage": "https://github.com/lamar-software/ui-kit#readme",
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "@angular/cli": "^8.2.2",
+    "@angular/common": "^8.2.2",
+    "@angular/core": "^8.2.2",
+    "@angular/material": "^8.1.3"
+  }
+}
