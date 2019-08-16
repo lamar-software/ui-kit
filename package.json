@@ -1,5 +1,5 @@
 {
-  "name": "ui-kit",
+  "name": "@lamar-software/ui-kit",
   "version": "0.0.1",
   "description": "A configurable UI kit built upon Angular v8's CDK",
   "main": "index.ts",
