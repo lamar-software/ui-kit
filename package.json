@@ -1,13 +1,15 @@
 {
-  "name": "ui-kit-lib",
-  "version": "0.0.0",
+  "name": "@lamar-software/ui-kit",
+  "version": "0.0.2",
+  "description": "A configurable UI kit built upon Angular v8's CDK",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "pretty": "prettier --write --single-quote '**/*.ts' '**/*.scss' '!dist/*' --print-width 100"
   },
   "private": true,
   "dependencies": {
@@ -49,5 +51,15 @@
     "tsickle": "^0.37.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lamar-software/ui-kit.git"
+  },
+  "author": "LaMar Software",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lamar-software/ui-kit/issues"
+  },
+  "homepage": "https://github.com/lamar-software/ui-kit#readme"
 }
