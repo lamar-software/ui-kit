@@ -1,0 +1,15 @@
+<div id="hidden-image-upload-container">
+  <input 
+    #inputElement 
+    id="image-file" 
+    (change)="handleImageChange(inputElement)" 
+    type="file" 
+    name="media">
+  
+  <label 
+    id="image-input-label" 
+    class="button"
+    for="image-file">{{ loading ? 'Uploading...' : 'Upload File' }}</label>
+
+  <p *ngIf="filename" id="file-text">{{ filename }}</p>
+</div>
