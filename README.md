@@ -9,6 +9,7 @@ A configurable UI kit built upon Angular v8's CDK.
 This project was created by LaMar Software.
 
 ## Installing
+
 - `npm install @lamar-software/ui-kit`
 
 ## Publishing
@@ -19,13 +20,11 @@ This project was created by LaMar Software.
 - Run `cd dist/ui-kit`
 - Run `npm publish`.
 
-## Link this library to sync changes locally and avoid reinstalling the library on every build
+## To sync this library with your project locally
 
 - Run `ng build ui-kit`.
 - Run `cd dist/ui-kit`.
-- Run `npm link`.
-- Run `cd path/to/your/project`.
-- Run `npm link path/to/dist/ui-kit`
+- Run `npm i path/to/dist/ui-kit`.
 
 ## To map to ui-kit library peer dependences
 
