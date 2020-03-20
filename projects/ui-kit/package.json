@@ -2,7 +2,7 @@
   "name": "@lamar-software/ui-kit",
   "version": "0.0.2",
   "description": "A configurable UI kit built upon Angular v8's CDK",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {
     "pretty": "prettier --write --single-quote '**/*.ts' '**/*.scss' '!dist/*' --print-width 100",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,10 +18,16 @@
   },
   "homepage": "https://github.com/lamar-software/ui-kit#readme",
   "peerDependencies": {
-    "@angular/common": "^8.2.14",
-    "@angular/core": "^8.2.14",
+    "@angular/animations": "~8.2.14",
     "@angular/cdk": "~8.2.3",
+    "@angular/common": "^8.2.14",
+    "@angular/compiler": "~8.2.14",
+    "@angular/core": "^8.2.14",
+    "@angular/forms": "~8.2.14",
     "@angular/material": "~8.2.3",
+    "@angular/platform-browser": "~8.2.14",
+    "@angular/platform-browser-dynamic": "~8.2.14",
+    "@angular/router": "~8.2.14",
     "hammerjs": "^2.0.8"
   }
 }

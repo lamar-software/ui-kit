@@ -1,27 +1,44 @@
-# UiKitLib
+# UI Kit
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
+`version 0.0.2`
 
-## Development server
+### This project is in an early alpha and is prone to breaking changes.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+A configurable UI kit built upon Angular v8's CDK.
 
-## Code scaffolding
+This project was created by LaMar Software.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installing
+- `npm install @lamar-software/ui-kit`
 
-## Build
+## Publishing
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Increment the version number in `package.json`.
+- Increment the version number in `README.md`.
+- Run `ng build ui-kit`.
+- Run `cd dist/ui-kit`
+- Run `npm publish`.
 
-## Running unit tests
+## Link this library to sync changes locally and avoid reinstalling the library on every build
+- Run `ng build ui-kit`.
+- Run `cd dist/ui-kit`.
+- Run `npm link`.
+- Run `cd path/to/your/project`.
+- Run `npm link path/to/dist/ui-kit`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## To map to ui-kit library peer dependences
+- Add the following in your project's `./tsconfig.json`
+```
+{
+  "compilerOptions": {
+    // ...
+    // paths are relative to `baseUrl` path.
+    "paths": {
+      "@angular/*": [
+        "./node_modules/@angular/*"
+      ]
+      // ...
+      // other dependencies the ui-kit library peer depends on
+    }
+  }
+}

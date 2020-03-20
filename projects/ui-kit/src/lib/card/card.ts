@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, ElementRef, Output, EventEmitter, Input, OnInit, OnChanges } from '@angular/core';
+import { Component, ElementRef, Output, EventEmitter, Input, OnInit, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'ui-kit-card',
