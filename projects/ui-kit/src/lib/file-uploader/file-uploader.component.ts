@@ -16,7 +16,9 @@ export class UiKitFileUploaderComponent {
   public readonly loading: boolean;
 
   @Output('imageSelect')
-  private readonly handleImageChangeEvent: EventEmitter<ImageSelectEvent> = new EventEmitter<ImageSelectEvent>();
+  private readonly handleImageChangeEvent: EventEmitter<ImageSelectEvent> = new EventEmitter<
+    ImageSelectEvent
+  >();
 
   constructor() {}
 

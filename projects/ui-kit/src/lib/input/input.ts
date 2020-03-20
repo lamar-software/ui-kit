@@ -1,4 +1,14 @@
-import { Directive, ElementRef, Input, NgZone, OnChanges, OnDestroy, OnInit, Optional, Self } from '@angular/core';
+import {
+  Directive,
+  ElementRef,
+  Input,
+  NgZone,
+  OnChanges,
+  OnDestroy,
+  OnInit,
+  Optional,
+  Self
+} from '@angular/core';
 import { FormGroupDirective, NgControl, ControlValueAccessor } from '@angular/forms';
 
 import {
@@ -15,7 +25,17 @@ import { AutofillMonitor } from '@angular/cdk/text-field';
 import { Subject } from 'rxjs';
 
 // Invalid input type. Using one of these will throw an error.
-const MAT_INPUT_INVALID_TYPES = ['button', 'checkbox', 'file', 'hidden', 'image', 'radio', 'range', 'reset', 'submit'];
+const MAT_INPUT_INVALID_TYPES = [
+  'button',
+  'checkbox',
+  'file',
+  'hidden',
+  'image',
+  'radio',
+  'range',
+  'reset',
+  'submit'
+];
 
 let nextUniqueId = 0;
 
@@ -146,9 +166,14 @@ export class UiKitInputComponent implements OnChanges, OnInit, OnDestroy, Contro
 
   @Input() loading: boolean = false;
 
-  protected _neverEmptyInputTypes = ['date', 'datetime', 'datetime-local', 'month', 'time', 'week'].filter(type =>
-    getSupportedInputTypes().has(type)
-  );
+  protected _neverEmptyInputTypes = [
+    'date',
+    'datetime',
+    'datetime-local',
+    'month',
+    'time',
+    'week'
+  ].filter(type => getSupportedInputTypes().has(type));
 
   constructor(
     protected _elementRef: ElementRef<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>,
@@ -192,7 +217,9 @@ export class UiKitInputComponent implements OnChanges, OnInit, OnDestroy, Contro
     this._isNativeSelect = element.nodeName.toLowerCase() === 'select';
 
     if (this._isNativeSelect) {
-      this.controlType = (element as HTMLSelectElement).multiple ? 'mat-native-select-multiple' : 'mat-native-select';
+      this.controlType = (element as HTMLSelectElement).multiple
+        ? 'mat-native-select-multiple'
+        : 'mat-native-select';
     }
   }
 
@@ -271,7 +298,12 @@ export class UiKitInputComponent implements OnChanges, OnInit, OnDestroy, Contro
   }
 
   get empty(): boolean {
-    return !this._isNeverEmpty() && !this._elementRef.nativeElement.value && !this._isBadInput() && !this.autofilled;
+    return (
+      !this._isNeverEmpty() &&
+      !this._elementRef.nativeElement.value &&
+      !this._isBadInput() &&
+      !this.autofilled
+    );
   }
 
   setDescribedByIds(ids: string[]) {

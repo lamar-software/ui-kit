@@ -4,14 +4,8 @@ import { CommonModule } from '@angular/common';
 import { UiKitFileUploaderComponent } from './file-uploader.component';
 
 @NgModule({
-  declarations: [
-    UiKitFileUploaderComponent
-  ],
-  imports: [
-    CommonModule
-  ],
-  exports: [
-    UiKitFileUploaderComponent
-  ]
+  declarations: [UiKitFileUploaderComponent],
+  imports: [CommonModule],
+  exports: [UiKitFileUploaderComponent]
 })
 export class UiKitFileUploaderModule {}

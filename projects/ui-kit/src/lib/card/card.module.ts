@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { UiKitCardTabDirective, UiKitCardSubheaderDirective, UiKitCardHeaderDirective, UiKitCardDirective } from './card';
+import {
+  UiKitCardTabDirective,
+  UiKitCardSubheaderDirective,
+  UiKitCardHeaderDirective,
+  UiKitCardDirective
+} from './card';
 
 @NgModule({
   declarations: [
@@ -10,9 +15,7 @@ import { UiKitCardTabDirective, UiKitCardSubheaderDirective, UiKitCardHeaderDire
     UiKitCardHeaderDirective,
     UiKitCardDirective
   ],
-  imports: [
-    CommonModule
-  ],
+  imports: [CommonModule],
   exports: [
     UiKitCardTabDirective,
     UiKitCardSubheaderDirective,
