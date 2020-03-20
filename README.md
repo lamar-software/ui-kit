@@ -20,6 +20,7 @@ This project was created by LaMar Software.
 - Run `npm publish`.
 
 ## Link this library to sync changes locally and avoid reinstalling the library on every build
+
 - Run `ng build ui-kit`.
 - Run `cd dist/ui-kit`.
 - Run `npm link`.
@@ -27,6 +28,7 @@ This project was created by LaMar Software.
 - Run `npm link path/to/dist/ui-kit`
 
 ## To map to ui-kit library peer dependences
+
 - Add the following in your project's `./tsconfig.json`
 ```
 {
