@@ -2,7 +2,4 @@
  * Public API Surface of ui-kit
  */
 
-export * from './lib/ui-kit.service';
-export * from './lib/ui-kit.component';
-export * from './lib/ui-kit.module';
-export { UiKitModule } from './lib/index';
+export { UiKitLabelModule } from './lib/label/label.module';
